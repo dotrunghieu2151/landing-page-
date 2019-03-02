@@ -1,0 +1,80 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: Arial, helvetica, sans-serif;
+    background-color:#333;
+    background-image:url("images/picture1.jpg");
+    background-size:3440px 1440px;
+    color:white;
+    line-height:1.6;
+    text-align:center;
+}
+.container {
+    max-width:960px;
+    margin: auto;
+    padding: 0 30px;
+}
+#showcase {
+    height: 300px;
+}
+#showcase h1 {
+    font-size:50px;
+    line-height:1.3;
+    position:relative;
+    animation:heading;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+}
+@keyframes heading {
+    0% {top:-50px;}
+    100% {top:200px;}
+}
+#content {
+    position:relative;
+    animation:content;
+    animation-duration:3s;
+    animation-fill-mode:fowards;
+}
+@keyframes content {
+    0% {left:-1000px;}
+    100%{left:0;}
+}
+.btn {
+    display:inline-block;
+    color:white;
+    text-decoration:none;
+    padding:1rem 2rem;
+    border: 1px solid white;
+    margin-top:40px;
+    opacity:0;
+    animation-name:btn;
+    animation-duration:3s;
+    animation-delay:3s;
+    animation-fill-mode:forwards;
+    transition-property:color,border-radius;
+    transition-duration:1s;
+}
+#lenny {
+   display:table;
+   border: 1px solid white;
+   padding: 1rem 2rem;
+   margin: 50px auto 0 auto;
+   opacity:0;
+   animation-name:lenny;
+   animation-duration:5s;
+   animation-delay:5s;
+}
+@keyframes lenny {
+    0% {opacity:0;}
+    100%{opacity:1;}
+}
+.btn:hover {
+    color:red;
+    border-radius:20px;
+}
+@keyframes btn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
